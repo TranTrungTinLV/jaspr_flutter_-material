@@ -1,0 +1,3 @@
+class PageTransitionsTheme {
+  const PageTransitionsTheme();
+}
