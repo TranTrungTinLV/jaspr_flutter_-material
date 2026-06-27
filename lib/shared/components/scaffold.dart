@@ -1,6 +1,6 @@
-import 'package:jaspr/dom.dart' hide Radius, BorderRadius, BoxShadow, Color, Padding, Transform, Border, Text, Shadow, Offset, VoidCallback;
 import 'package:jaspr/dom.dart' as dom;
-import 'package:jaspr/jaspr.dart' hide Padding, Transform, Color, Border, BorderRadius, Text;
+import 'package:jaspr/dom.dart'
+    hide Radius, BorderRadius, BoxShadow, Color, Padding, Transform, Border, Text, Shadow, Offset, VoidCallback;
 
 import 'mock_types.dart';
 
@@ -74,7 +74,7 @@ class Scaffold extends StatelessComponent {
         height: 100.vh,
         overflow: Overflow.hidden,
         flexDirection: FlexDirection.column,
-        backgroundColor: backgroundColor?.toJasprColor() ?? dom.Color('#FAFAFA'),
+        backgroundColor: backgroundColor?.toJasprColor(),
       ),
       [
         // AppBar

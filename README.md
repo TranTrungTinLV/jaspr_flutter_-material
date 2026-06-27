@@ -43,7 +43,7 @@ Trong Flutter thuần, các widget được render xuống **Skia/Impeller Canva
 
 <div align="center">
 
-| 🎯 Vấn đề | ✅ Giải pháp |
+| 🎯 Vấn đề | Giải pháp |
 |:---:|:---:|
 | Flutter widgets không hiểu DOM | Bridge bọc HTML thành Flutter API |
 | Namespace conflicts | Tách biệt hoàn toàn, zero conflict |
@@ -135,19 +135,19 @@ jaspr serve
 Khởi chạy môi trường phát triển với **Hot-Reload** tích hợp:
 
 ```
-🟢 Server đang chạy tại  http://localhost:8080
-🔄 Hot-Reload bật sẵn    — lưu file là cập nhật ngay
-📦 Build mode            — Development
+ Server đang chạy tại  http://localhost:8080
+ Hot-Reload bật sẵn    — lưu file là cập nhật ngay
+ Build mode            — Development
 ```
 
-> **💡 Mẹo:** Nếu gặp lỗi `Connecting to the build daemon... Shutting down`, hãy chạy:
+> ** Mẹo:** Nếu gặp lỗi `Connecting to the build daemon... Shutting down`, hãy chạy:
 > ```bash
 > jaspr clean && jaspr serve
 > ```
 
 ---
 
-### 📦 `jaspr build` — Production Build
+### `jaspr build` — Production Build
 
 ```bash
 jaspr build
@@ -159,7 +159,7 @@ Biên dịch toàn bộ dự án cho production:
 Step 1/3  ████████████░░  Compiling Dart → JavaScript (client)
 Step 2/3  ████████████████  Bundling assets
 Step 3/3  ████████████████  Generating server executable
-✅ Build completed → ./build/
+Build completed → ./build/
 ```
 
 Output tạo ra gồm:
@@ -168,7 +168,7 @@ Output tạo ra gồm:
 
 ---
 
-### 🧹 `jaspr clean` — Dọn Dẹp Cache
+###  `jaspr clean` — Dọn Dẹp Cache
 
 ```bash
 jaspr clean
@@ -177,9 +177,9 @@ jaspr clean
 Xóa sạch các thư mục cache:
 
 ```
-🗑  Removing build/         ✓
-🗑  Removing .dart_tool/    ✓
-✅  Workspace sạch, sẵn sàng build lại!
+ Removing build/         ✓
+ Removing .dart_tool/    ✓
+ Workspace sạch, sẵn sàng build lại!
 ```
 
 > Hữu ích khi gặp lỗi biên dịch kỳ lạ hoặc muốn build hoàn toàn từ đầu.
@@ -191,7 +191,7 @@ Xóa sạch các thư mục cache:
 | Lệnh | Mô Tả |
 |------|--------|
 | `jaspr create` | Tạo một dự án Jaspr mới |
-| `jaspr convert-html` | Chuyển HTML thô → Jaspr Components |
+| `jaspr convert-html` | Chuyển HTML thô → Jaspr Components |****
 | `jaspr doctor` | Kiểm tra môi trường & dependencies |
 | `jaspr update` | Cập nhật Jaspr CLI lên phiên bản mới nhất |
 
@@ -251,7 +251,7 @@ class MyPage extends StatelessComponent {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
-        'Hello từ Jaspr Material Bridge! 🎉',
+        'Hello từ Jaspr Material Bridge! ',
         style: TextStyle(color: Colors.white, fontSize: 18),
       ),
     );
@@ -262,7 +262,7 @@ class MyPage extends StatelessComponent {
 
 ---
 
-## 👨‍💻 Tác Giả & Lời Cảm Ơn (Authors & Acknowledgements)
+##  Tác Giả & Lời Cảm Ơn (Authors & Acknowledgements)
 
 **Phát triển dự án & Xây dựng Bridge:**
 * **Tên:** TranTrungTinLV (aka Vi)

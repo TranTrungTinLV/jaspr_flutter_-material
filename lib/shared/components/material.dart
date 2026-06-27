@@ -1,5 +1,6 @@
-import 'package:jaspr/dom.dart' hide Color, Padding, Transform, Border, BorderRadius, Text, BoxShadow, Radius, Shadow, Offset, VoidCallback;
-import 'package:jaspr/jaspr.dart' hide Padding, Transform, Color, Border, BorderRadius, Text;
+import 'package:jaspr/dom.dart'
+    hide Color, Padding, Transform, Border, BorderRadius, Text, BoxShadow, Radius, Shadow, Offset, VoidCallback;
+
 import 'mock_types.dart';
 
 class MaterialApp extends StatelessComponent {
@@ -15,11 +16,8 @@ class MaterialApp extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(
-      styles: Styles(
-      ),
-      [
-        if (child != null) child!
-      ],
+      styles: Styles(),
+      [if (child != null) child!],
     );
   }
 }
